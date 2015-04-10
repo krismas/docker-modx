@@ -1,6 +1,6 @@
 # Docker MODX
 [Dockerfiles for MODX](https://github.com/krismas/docker-modx) - v0.0.1
 
-## modx-ranp
+## MODX-ranp
 
-A Dockerfile based on [Alpine Linux](gliderlabs/docker-alpine) that installs the latest [MODX Revolution](https://github.com/modxcms/revolution), nginx and php-fpm 
+A Dockerfile based on [Alpine Linux](gliderlabs/docker-alpine) that installs the latest [MODX Revolution](https://github.com/modxcms/revolution), nginx and php-fpm. This image needs an external MySQL server or linked MySQL container.
