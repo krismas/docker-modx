@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Get latest MODX
+# Get latest MODX Revolution
 #
 wget -q http://modx.com/download/latest -O /home/latest.zip
 unzip /home/latest.zip -x "*/./" -d /home > /dev/null 2>&1

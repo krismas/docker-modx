@@ -10,12 +10,6 @@ MAINTAINER Gildas NOEL <g.noel@ackwa.fr>
 RUN apk add --update wget zip
 
 #
-# MODX
-#
-COPY modx.sh /tmp/modx.sh
-RUN  sh /tmp/modx.sh && rm /tmp/modx.sh
-
-#
 # NGINX web server
 #
 RUN  apk add --update nginx 
@@ -32,6 +26,12 @@ RUN apk add --update php-fpm php-pdo_mysql php-curl php-json php-xml php-zlib ph
 #
 RUN  apk add --update supervisor
 COPY supervisord.ini /etc/supervisor.d/supervisord.ini
+
+#
+# MODX
+#
+COPY modx.sh /tmp/modx.sh
+RUN  sh /tmp/modx.sh && rm /tmp/modx.sh
 
 #
 # Container configuration
